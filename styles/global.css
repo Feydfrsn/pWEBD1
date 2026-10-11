@@ -1,0 +1,57 @@
+:root {
+    --headerBgColor: #d5bdaf;
+    --textColor: black;
+    --navLinkHover: white;
+    --bodyBgColor: #edede9;
+    --footerBgColor: #d6ccc2;
+}
+
+.textPolice {
+    font-family: Impact, "Arial Black", sans-serif;
+}
+
+header {
+    background-color: var(--headerBgColor);
+}
+
+#flexboxHeader {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#headerTitle {
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2em;
+}
+
+.NavLink {
+    margin: 1em;
+    color: var(--textColor);
+}
+
+.NavLink:hover {
+    color: var(--navLinkHover);
+}
+
+body {
+    margin: 0;
+    background-color: var(--bodyBgColor)
+}
+
+footer {
+    background-color: var(--footerBgColor);
+}
+
+#flexboxFooter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 2em;
+}
