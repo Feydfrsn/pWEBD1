@@ -1,0 +1,9 @@
+#content {
+    margin: 2em;
+}
+
+#titleImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

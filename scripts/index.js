@@ -35,7 +35,7 @@ async function getMovies() {
 
 async function displayMovies(data) {
     const plot = await getPlot(data.imdbID);
-    let article = document.createElement("article");
+    const article = document.createElement("article");
     article.innerHTML = `
         <article class="Film">
             <img src="http://img.omdbapi.com/?apikey=${apikey}&i=${data.imdbID}" alt="Affiche du film ${data.Title}" />
