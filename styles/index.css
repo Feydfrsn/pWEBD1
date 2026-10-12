@@ -1,0 +1,43 @@
+:root {
+    --buttonHoverBgColor: lightgray;
+}
+
+#h1Trend {
+    margin: 0.5em;
+}
+
+#displayMovies {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.Film {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+    width: 10em;
+}
+
+img {
+    width: 12em;
+    height: 18em;
+}
+
+#flexboxButton {
+    display: flex;
+    justify-content: center;
+}
+
+#more {
+    width: 10em;
+    height: 3em;
+    border: solid black 4px;
+    border-radius: 10px;
+}
+
+#more:hover {
+    background-color: var(--buttonHoverBgColor);
+}
