@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPCinéma - Recherche</title>
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/search.css">
 </head>
 
 <body class="textPolice">
     <!--Le header étant commun à chaque page, il est inclut via le fichier /script/header.js-->
     <header id="header"></header>
 
+    <h1 id="h1Search">Rechercher un film :</h1>
+    <search>
+        <input id="searchBar" type="search" placeholder="Rechercher un film...">
+    </search>
+    <div id="container"></div>
+    <div id="flexboxButton">
+        <button id="more" type="button">Plus...</button>
+    </div>
+
     <!--Le footer étant commun à chaque page, il est inclut via le fichier /script/footer.js-->
     <footer id="footer"></footer>
 
     <script src="scripts/header.js"></script>
     <script src="scripts/footer.js"></script>
+    <script src="scripts/search.js"></script>
 </body>
 
 </html>
