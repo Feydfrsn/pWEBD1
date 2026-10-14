@@ -14,7 +14,7 @@ let trend = [
     "tt0816692",
     "tt1790864",
 ]
-const divDisplayMovies = document.getElementById("displayMovies");
+const container = document.getElementById("container");
 const moreButton = document.getElementById("more");
 
 async function getMovies() {
@@ -43,7 +43,7 @@ async function displayMovies(data) {
             <a title="Lien vers la page du film ${data.Title}" href="movie.html?imdbID=${data.imdbID}">En savoir plus</a>
             <p>${plot}</p>
         </article>`
-    divDisplayMovies.appendChild(article);
+    container.appendChild(article);
 }
 
 async function getPlot(imdbID) {
