@@ -28,49 +28,49 @@ Un site web, contenant au moins les 3 pages suivantes :
 
 Attention :
 Il est nécessaire d'utiliser un serveur http pour accéder à vos pages. Vous pourrez utiliser :
-    Live Server sur VS CODE
-    serve (un paquet NPM) - pour celui-ci, vous pouvez reprendre le script "npm start" des exercices avec batteries de tests
+Live Server sur VS CODE
+serve (un paquet NPM) - pour celui-ci, vous pouvez reprendre le script "npm start" des exercices avec batteries de tests
 
 Il est fortement recommandé d'utiliser plusieurs fichiers JS (ou TS) et de les faire traiter par un bundler.
 Il est fortement recommandé d'avoir un bundle (ou au moins un fichier JS) par page au lieu d'un seul pour toutes les page (sauf logique partagé entre pages, comme l'authentification par exemple)
 
 Critères de notation :
 index.html (25pts)
-    Afficher quelques films (3 minimum) contenus par la base de données que vous considérez en tendance (5 pts)
-    Pour chaque film, les informations suivantes doivent êtres affichées : (5 pts)
-        Son poster
-        Son nom
-        Un lien pour en savoir plus (devra rediriger vers movie.html)
-        Bonus : Un petit résumé du film
-    Ajouter un bouton pour charger plus de films de 2024
+Afficher quelques films (3 minimum) contenus par la base de données que vous considérez en tendance (5 pts)
+Pour chaque film, les informations suivantes doivent êtres affichées : (5 pts)
+Son poster
+Son nom
+Un lien pour en savoir plus (devra rediriger vers movie.html)
+Bonus : Un petit résumé du film
+Ajouter un bouton pour charger plus de films de 2024
 
 search.html (25pts)
 La page devra contenir :
-    Une barre de recherche
-    Les résultats de la recherche en temps réel (20 pts)
-    Interdiction de causer un rechargement de la page pendant ou après la recherche (0 pts sur l'ensemble de la partie si ce n'est pas respecté)
-    Un bouton pour charger plus de résultats de recherche
+Une barre de recherche
+Les résultats de la recherche en temps réel (20 pts)
+Interdiction de causer un rechargement de la page pendant ou après la recherche (0 pts sur l'ensemble de la partie si ce n'est pas respecté)
+Un bouton pour charger plus de résultats de recherche
 
 Pour chaque résultat de la recherche affichée : (5 pts)
-    Le poster du film
-    Le titre du film
-    Un lien pour en savoir plus (devra rediriger vers movie.html)
+Le poster du film
+Le titre du film
+Un lien pour en savoir plus (devra rediriger vers movie.html)
 
 movie.html (25pts)
 La page devra contenir :
-    Le titre du film
-    Le poster du film
-    Le grand résumé du film
-    Le genre du film
-    Les acteurs
-    Bonus :
-        Les notes obtenues par le film
-        La date de sortie en DVD (formatée en français : jj/mm/aaaa)
+Le titre du film
+Le poster du film
+Le grand résumé du film
+Le genre du film
+Les acteurs
+Bonus :
+Les notes obtenues par le film
+La date de sortie en DVD (formatée en français : jj/mm/aaaa)
 
 Git (25 pts)
-    La bonne gestion du dépôt distant sur GitHub (10 pts)
-    L'organisation des branches (10 pts)
-    Le nom des messages de commit (5 pts)
+La bonne gestion du dépôt distant sur GitHub (10 pts)
+L'organisation des branches (10 pts)
+Le nom des messages de commit (5 pts)
 
 Le rendu se fera dans une archive ZIP (ou autre) depuis Moodle, seul le rendu sur Moodle sera prit en compte.
 
