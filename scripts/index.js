@@ -1,4 +1,5 @@
 const apikey = "93054333";
+// Liste des imdbID des films considérés en tendance
 let trend = [
     "tt12042730",
     "tt28650488",
@@ -17,6 +18,7 @@ let trend = [
 const container = document.getElementById("container");
 const moreButton = document.getElementById("more");
 
+// Récupère les détails du premier film de la liste trend et appelle displayMovies() pour les afficher
 async function getMovies() {
     if (trend.length === 0) {
         moreButton.style.display = "none";
@@ -33,6 +35,7 @@ async function getMovies() {
     }
 }
 
+// Affiche les films avec les détails passés en paramètres (data)
 async function displayMovies(data) {
     const plot = await getPlot(data.imdbID);
     const article = document.createElement("article");
@@ -46,6 +49,7 @@ async function displayMovies(data) {
     container.appendChild(article);
 }
 
+// Permet de récupérer le résumé court du film. Est appelée dans displayMovies()
 async function getPlot(imdbID) {
     try {
         const response = await fetch(`https://www.omdbapi.com/?apikey=${apikey}&i=${imdbID}`);
@@ -57,6 +61,7 @@ async function getPlot(imdbID) {
     }
 }
 
+// Affiche trois films à la fois. Est appelée une fois à l'affichage de la page et une fois par appui sur le bouton 'Plus...'
 async function main() {
     await getMovies();
     await getMovies();

@@ -1,3 +1,4 @@
+// On remplit la balise header avec le contenu
 document.getElementById("header").innerHTML = `
     <div id="flexboxHeader">
         <h1 id="headerTitle">SUPCinéma</h1>

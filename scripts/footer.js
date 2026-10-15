@@ -1,3 +1,4 @@
+// On remplit la balise footer avec le contenu
 document.getElementById("footer").innerHTML = `
     <div id="flexboxFooter">
         <nav>

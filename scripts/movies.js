@@ -1,6 +1,6 @@
 const apikey = "93054333";
 
-// Récupération de l'imdbID passé en paramètres dans l'URL
+// Récupération de l'imdbID passé en paramètre dans l'URL
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const imdbID = urlParams.get("imdbID");
@@ -8,17 +8,19 @@ const imdbID = urlParams.get("imdbID");
 const pageTitle = document.getElementById("pageTitle");
 const container = document.getElementById("container");
 
+// Récupère les détails du film dont l'imdbID est passé en paramètre et appelle displayMovies() pour les afficher
 async function getContent() {
     try {
         const response = await fetch(`https://www.omdbapi.com/?apikey=${apikey}&i=${imdbID}&plot=full`);
         const data = await response.json();
-        displayContent(data);
+        displayMovies(data);
     } catch (error) {
         console.error("Erreur : ", error);
     }
 }
 
-function displayContent(data) {
+// Affiche les détails du film passés en paramètre (data) sur la page
+function displayMovies(data) {
     pageTitle.textContent = `SUPCinéma - ${data.Title}`
 
     const ratings = document.createElement("div");
