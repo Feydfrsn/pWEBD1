@@ -42,6 +42,8 @@ function displayContent(data) {
             </div>
             <h2>Résumé :</h2>
             <p>${data.Plot}</p>
+            <h2>Genre :</h2>
+            <p>${data.Genre}</p>
             <h2>Liste des acteurs :</h2>
             <p>${data.Actors}</p>
             <h2>Notes :</h2>
